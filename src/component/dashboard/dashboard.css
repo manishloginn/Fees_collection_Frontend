@@ -1,0 +1,158 @@
+.topInputcontainer {
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .top-input {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 10px;
+  }
+}
+
+.dark option {
+  background-color: darkgray;
+  color: white;
+}
+
+
+
+
+
+.dark .top-input {
+  color: white;
+}
+
+.dark .second-input {
+  color: white;
+}
+
+
+.containerrr {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  table {
+    width: 95vw;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+
+  
+
+  
+ .dark td {
+    background-color: darkgrey;
+    color:  white;
+    border: 1px solid;
+  }
+
+  .light td {
+    background-color: white;
+    color:  black;
+    /* border: 1px solid grey; */
+  }
+
+  .light th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold ;
+  }
+
+  .dark th {
+    background-color: darkgrey;
+    color:  white;
+    border: 1px solid;
+  }
+  
+  .dark tr:hover {
+    background-color: lightgray;
+  }
+  
+  table thead {
+    position: sticky;
+    top: 0;
+    /* z-index: 1; */
+  }
+  
+  
+  table tbody tr:hover {
+    transition: 0.1s ease all;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 5px 0px black;
+    z-index: 1;
+  }
+  
+  .status-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .status-options {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .status-container:hover .status-options {
+    display: block;
+  }
+  
+  .status-options button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .status-options button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Button Style */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  h1 {
+    color: #ff6347;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
