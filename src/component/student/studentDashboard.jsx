@@ -76,7 +76,7 @@ const studentDashboard = () => {
             if (response.status === 201) {
                 setPaymentStatus('Payment Success');
                 notification.success({
-                    message:response.message
+                    message:response.data.message
                 })
        
             } else {

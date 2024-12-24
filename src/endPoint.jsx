@@ -6,6 +6,8 @@ const Endpoints = {
     adminLogin:`${baseUrl}/admin/login`,
     studentLogin:`${baseUrl}/student/login`,
     studentpayment:`${baseUrl}/student/payment`,
+    studentRegistration:`${baseUrl}/addstudent`,
+    getCsvData:`${baseUrl}/collect_requests`,
 }
 
 export default Endpoints

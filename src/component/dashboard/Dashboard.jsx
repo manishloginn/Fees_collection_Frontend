@@ -5,6 +5,7 @@ import { LoadingOutlined, SearchOutlined } from '@ant-design/icons';
 import axios from 'axios';
 import Endpoints from '../../endPoint';
 import { Flex, message, notification, Spin, Pagination } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
   const { theme } = useContext(ThemeContext);
@@ -95,6 +96,8 @@ const Dashboard = () => {
     }));
   };
 
+  const navigate = useNavigate()
+
   const handleStatusChange = ({ id, newStatus}) => {
     setFilteredData((prevFilteredData) =>
       prevFilteredData.map((item) => {
@@ -112,10 +115,13 @@ const Dashboard = () => {
   const changeStatusInDatabase = async ({id, newStatus}) => {
     try {
       setLoader(true)
-      const response = await axios.post(Endpoints.changeStatus, {id:id, status:newStatus})
+      const response = await axios.post(Endpoints.changeStatus, 
+        {id:id, status:newStatus}, 
+        {withCredentials:true}
+      )
       if(response.status === 200 ){
         notification.success({
-          message:response.message
+          message:response.data.message
         })
         setLoader(false)
       }
@@ -124,6 +130,7 @@ const Dashboard = () => {
       notification.warning({
         message:error.message
       })
+      navigate('/admin/login')
     }
   }
 

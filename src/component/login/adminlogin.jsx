@@ -31,7 +31,11 @@ const login = () => {
       e.preventDefault();
       setloader(true)
       try {
-        const response = await axios.post(Endpoints.adminLogin, formData)
+        const response = await axios.post(
+          Endpoints.adminLogin, 
+          formData, 
+          { withCredentials: true } 
+      );
         console.log(response)
         if(response.status === 200){
           setloader(false)
@@ -39,7 +43,7 @@ const login = () => {
             message: 'Login successful',
           });
           const { data } = response.data;  
-          Cookies.set('admin', data, { expires: 7 });  
+          // Cookies.set('admin', data, { expires: 7 });  
           navigate('/')
         }  
       } catch (error) {
