@@ -1,4 +1,7 @@
-const baseUrl = 'http://localhost:5000'
+// const baseUrl = 'http://localhost:5000'
+const baseUrl = 'https://fees-collection-backend.onrender.com'
+
+
 
 const Endpoints = {
     getDashboardData : `${baseUrl}/dashboardData`,
