@@ -4,6 +4,8 @@ Overview
 
 This project contains a Dashboard component designed for an admin panel. The dashboard allows administrators to manage and monitor data records, filter through them, and update statuses dynamically. Additionally, a separate page for students is included where they can log in and proceed with their payments.
 
+**if you run this file in you local host please change the endpoint baseurl**
+
 Flow
 
 Default View: When the website loads, the dashboard is the default page displayed. It provides an overview of various records and allows the admin to change the status of each record.
@@ -164,13 +166,17 @@ The theme context (ThemeContext) applies additional theming based on the selecte
 
 
 
-credentials admin {
+credentials for  admin 
+{
 username : admin;
 password : 12345
 }
 
 
-credentials student {
+credentials for student  or you can registere also at the time of registratin he need School ID
+ so i am sharing you one school id which is in my database 
+ **67697984bb5d9dae76a7a977** use this or **676978bc2ec4bf09a53c9c2b** this
+{
 username : manish@gmail.com;
 password : 12345
 }
