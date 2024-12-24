@@ -48,7 +48,6 @@ const login = () => {
           console.log(schoolId)  
           
           localStorage.setItem('schoolDetail', schoolId._id);
-
           navigate('/student/dashboard') 
         }  
       } catch (error) {
